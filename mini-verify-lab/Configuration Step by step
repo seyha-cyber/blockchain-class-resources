@@ -1,0 +1,54 @@
+======= 2. Create project folder ==================
+mrseyhapheav@cloudshell:~$ mkdir mini_verify_lab
+mrseyhapheav@cloudshell:~$ cd mini_verify_lab
+mrseyhapheav@cloudshell:~/mini_verify_lab$
+======= 3. Create Python virtual environment=======
+mrseyhapheav@cloudshell:~$ python3 -m venv venv
+mrseyhapheav@cloudshell:~$ source venv/bin/activate
+(venv) mrseyhapheav@cloudshell:~$
+======= 4. Install tools ==========================
+mrseyhapheav@cloudshell:~$ pip install flask qrcode pillow
+======= 5. Create folders and files ===============
+mkdir certificates
+mkdir static
+touch app.py
+result : 
+mrseyhapheav@cloudshell:~/mini_verify_lab$ mkdir certificates
+mrseyhapheav@cloudshell:~/mini_verify_lab$ mkdir static
+mrseyhapheav@cloudshell:~/mini_verify_lab$ touch app.py
+mrseyhapheav@cloudshell:~/mini_verify_lab$ ls
+app.py  certificates  static
+======= 6. Create certificate file ================
+Paste this:
+SEYHA CYBER ACADEMY
+
+Certificate ID: CERT-001
+Student Name: Dara Sok
+Course: Blockchain Technology
+Date: 28 June 2026
+Result: Completed
+
+Issued by: Seyha Cyber Academy
+=================
+Save:
+Ctrl + O
+Enter
+Ctrl + X
+======= 7. Run the lab ============
+Run:
+python app.py
+Open browser:
+http://127.0.0.1:5000
+Click:
+Step 1: Issue Certificate
+Now the system will:
+•	Read the certificate 
+•	Generate SHA-256 hash 
+•	Store the hash as trusted record 
+•	Generate QR code 
+Then click:
+Verify Certificate
+You should see:
+Certificate is VALID
+
+
